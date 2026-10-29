@@ -1,4 +1,3 @@
-
 pipeline {
     agent any
 
@@ -9,7 +8,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git branch: 'master',
+                git branch: 'main',
                     url: 'https://github.com/darshiniag/LibraryAppCI.git '
             }
         }
